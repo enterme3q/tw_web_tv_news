@@ -1,0 +1,5 @@
+.sass-cache/*
+stylesheets/layout.css
+fire_app_log.txt
+config.rb
+.DS_Store

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js no-touch"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>台灣網路新聞直播</title>
+    <meta name="description" content="台灣 新聞 網路 直播 台灣新聞 新聞直播 網路直播 台灣新聞直播 新聞網路直播 網路新聞直播 台灣新聞網路直播">
+    <meta name="keywords" content="台灣 新聞 網路 直播 台灣新聞 新聞直播 網路直播 台灣新聞直播 新聞網路直播 網路新聞直播 台灣新聞網路直播">
+
+    <meta name="author" content="DavidSang">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/layout.css" />
+
+
+</head>
+
+<body id="<%= @tmpID %>">
+
+    <div class="container">
+        <%= render :partial => "header" %>
+        <%= yield %>
+    </div>
+
+    <script type="text/javascript" src="javascripts/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+
+    <%= livereload_js if ENV["RACK_ENV"] != "production" %>
+</body>
+</html>

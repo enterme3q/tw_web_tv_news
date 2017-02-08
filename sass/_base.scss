@@ -1,0 +1,17 @@
+body {
+    padding-top: 60px;
+
+    .news_item {
+        padding-bottom: 20px;
+
+        .news_video {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .news_info {
+            font-size: 20px;
+            color: #666;
+        }
+    }
+}
