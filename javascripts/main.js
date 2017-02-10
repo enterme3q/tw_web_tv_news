@@ -28,11 +28,12 @@ $(document).ready(function() {
     });
 
     $('#search_channel').click(function() {
-        $('.news_item').remove();
 
         $selected = $('.channel_box:checked');
 
         if($selected.length > 0) {
+
+            $('.news_item').remove();
 
             $selected_channel = $selected.map(function(index, value) {
                 return this.value;
@@ -54,5 +55,13 @@ $(document).ready(function() {
         } else {
             alert('請至少選擇一個頻道');
         }
+    });
+
+    $('#select_all').click(function() {
+        $('.channel_box').prop('checked', true);
+    });
+
+    $('#clear_all').click(function() {
+        $('.channel_box').prop('checked', false);
     });
 });

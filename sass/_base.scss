@@ -19,9 +19,17 @@ body {
             }
         }
 
-        #search_channel {
-            font-size: 25px;
-            padding: 5px 20px;
+        #selector_func {
+
+            #check_func_wrapper {
+                margin-bottom: 10px;
+            }
+
+            #search_channel {
+                display: block;
+                font-size: 25px;
+                padding: 5px 20px;
+            }
         }
     }
 

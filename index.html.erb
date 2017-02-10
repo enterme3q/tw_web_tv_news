@@ -3,13 +3,23 @@
 <div id="page_content">
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <h1>台灣網路新聞直播</h1>
+        <h1>台灣新聞線上直播</h1>
         <p>Makes you watch news easier.</p>
     </div>
     <div id="channel_selector" class="row">
-        <p class="desc_title">請選擇您想收看的新聞台 (以下按照英文名排序)</p>
+        <div id="selector_header">
+            <p id="desc_title">請選擇您想收看的新聞台 (以下按照英文名排序)</p>
+        </div>
         <div id="selector_inner" class="row"></div>
-        <a href="javascript:void(0);" id="search_channel" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 btn btn-info">看新聞 GO</a>
+        <div id="selector_func" class="container">
+        <div id="check_func_wrapper" class="btn-group row">
+                <button type="button" id="select_all" class="check_func btn btn-default" href="javascripts:void(0);">全選</button>
+                <button type="button" id="clear_all" class="check_func btn btn-default" href="javascripts:void(0);">清除</button>
+            </div>
+            <div id="search_btn_wrapper" class="row">
+                <a href="javascript:void(0);" id="search_channel" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 btn btn-info">看新聞 GO</a>
+            </div>
+        </div>
     </div>
 
     <div id="news_wrapper" class="row">
