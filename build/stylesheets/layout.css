@@ -4,7 +4,7 @@ body {
 }
 /* line 4, ../sass/_base.scss */
 body #channel_selector {
-  margin: 0 20px;
+  margin: 0px;
   padding-bottom: 20px;
   border-bottom: 1px solid #999;
 }
