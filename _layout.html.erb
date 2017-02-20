@@ -26,8 +26,8 @@
 
 <body id="<%= @tmpID %>">
 
-    <div class="container">
-        <%= render :partial => "header" %>
+    <%= render :partial => "header" %>
+    <div id="main_container" class="container">
         <%= yield %>
     </div>
 

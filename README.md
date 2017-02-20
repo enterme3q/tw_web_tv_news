@@ -9,3 +9,6 @@
 
 # v2.1.1 (2017.02.13)
     modified the cti's video url and refined the styles
+
+# v2.2.0 (2017.02.20)
+    redined the styles

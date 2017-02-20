@@ -30,10 +30,11 @@ $(document).ready(function() {
     $('#search_channel').click(function() {
 
         $selected = $('.channel_box:checked');
+        $news_item = $('.news_item');
 
         if($selected.length > 0) {
 
-            $('.news_item').remove();
+            $news_item.remove();
 
             $selected_channel = $selected.map(function(index, value) {
                 return this.value;
@@ -62,6 +63,6 @@ $(document).ready(function() {
     });
 
     $('#clear_all').click(function() {
-        $('.channel_box').prop('checked', false);
+        $('.channel_box:checked').prop('checked', false);
     });
 });
